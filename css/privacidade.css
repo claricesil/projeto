@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/*@media only screen and (max-device-width: 900px) {
+   .galery { width:600px; }
+} */
+
+header{
+    width:100%;
+    height:auto;
+    background-color: rgb(233, 211, 15);
+}
+
+/*BARRA PESQUISA INPUT*/
+input{
+    position:relative;
+    float: right;
+    margin:25px 10px 0px 60px;
+    width: 350px;
+    height: 25px;
+    
+}
+
+/*BOTÃO PESQUISAR*/
+#submit{
+    width: 70px;
+    height: 25px;
+    margin: 25px 340px 0px 0px ;
+}
+
+/*icones wpp/fb/inst. */
+.x{
+    float: right;
+    margin: 25px 1px 0px 5px;
+}
+
+#menu{
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#menu p a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    color: black;
+    float: left;
+    margin: 0px 3px 5px 100px;
+    text-decoration: none;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+ 
+#menu p a:hover{
+    color: red;
+}
+
+hr{
+    background: darkgray;
+}
+
+.priv{
+    width: auto;
+    height: auto;
+    margin: 0% 10% 10% 10%;
+}
+
+#title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    text-align: justify;
+}
+
+h1{
+    font-size: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: justify;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+footer{
+    width:100%;
+    height:80px;
+    background-color: rgb(233, 211, 15);
+}
+footer p a{
+    float: left;
+    margin: 30px;
+    font-size: 11pt;
+    font-family: helvetica;
+    text-decoration: none;
+    color: slategrey;
+}

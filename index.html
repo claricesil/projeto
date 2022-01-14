@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanche Prime </title>
+    <link rel="stylesheet" href="css/hotsite.css">
+    <script src="script/hotsite.js"></script>
+    <link rel="shortcut icon" type="ico" href="img/ico.png"><!--Tag para colocar imagem na guia da internet-->
+    
+<script>
+    var button = document.getElementById('fotoMenu');
+    var boxMenu = document.getElementById('menu');
+    var fechar = document.getElementById('close');
+
+    function abrir(){
+        boxMenu.style.display="block";
+        fechar.style.display="block";
+        button.style.display="none";
+}
+
+   function fechar2(){
+        boxMenu.style.display="none";
+        fechar.style.display="none";
+        button.style.display="block";
+   
+    }
+</script>
+
+</head>
+<body>
+
+
+  
+    <header>
+            <div id="boxlogo">
+
+                <a href="index.html"><img src="img/logo.png" alt="logotipo" id="logotipo"></a>
+
+            </div>
+       
+
+        <div id="redesociais">
+
+            <a href="http://www.instagram.com.br"><img class="atalhosrs" id="in"src="img/instP.png" onmouseover="trocar()" onmouseout="voltar()"></a>
+            <a href="http://www.facebook.com.br"><img class="atalhosrs" id="fc"src="img/ffb.png" onmouseover="trocarf()" onmouseout="voltarf()"></a>
+            <a href="http://web.whatsapp.com"><img class="atalhosrs" id="wp" src="img/whatsappP.png" onmouseover="trocarw()" onmouseout="voltarw()"></a>
+
+        </div>
+        
+        <form id="formPesquisa" action="">
+            <input id="pesquisa" type="search" maxlength="15" placeholder="Pesquisar seu Lanche Prime">
+            <input id="submit" type="button" value="Pesquisar">
+        </form>
+     
+
+    </header>
+
+    
+
+    <nav id="menu">
+        <div id="cx" class="meuMenu">
+         
+            <ul class="menu">
+                <li id="mm"><a href="classicos.html">Clássicos</a></li>
+                <li id="mm"><a href="acompanhamentos.html">Acompanhamentos</a></li>
+                <li id="mm"><a href="bebidas.html">Bebidas</a></li>
+            </ul>
+
+       </div>
+    </nav>
+
+    <br>
+
+    <section class="galery"> 
+        <div class="foto">
+            <img src="img/1.png" alt="foto 1">
+            <img src="img/2.png" alt="foto 2">
+            <img src="img/3.png" alt="foto 3">
+            <img src="img/4.png" alt="foto 4">
+        </div>
+    </section>
+
+    <div class="box">
+        <img id="pic" src="img/lanch.jpg" alt="" srcset="">
+            <P class="titulo1"><b>Lançamentos</b></P>
+            <p class="sub">Fique por Dentro dos lançamentos do Lanche Prime</p>
+            <a href="lancamentos.html"><input type="button" value="Saiba Mais" id="botao"></a>
+    </div>
+
+    <div class="box">
+        <img id="pic" src="img/nov.png" alt="Novidades">
+            <P class="titulo1"><b>Sobremesas</b></P>
+            <p class="sub">Acompanhe as novidades do cardapio</p>
+            <p class="sub">Clique no botão abaixo e fique por dentro</p>
+        <a href="sobremesas.html"><input type="button" value="Saiba Mais" id="botao"></a>
+    </div>
+
+    <div class="box">
+        <img id="pic" src="img/combos.jpg" alt="combos">    
+            <P class="titulo"><b>Combos</b></P>
+            <p class="sub">Monte o seu próprio combo Clique em saiba mais para mais informações</p>
+            <a href="combos.html"><input type="button" value="Saiba Mais" id="botao"></a>
+    </div>
+
+    
+
+    <div class="box2">
+        <img id="medidas" src="img/lc.jpg" alt="Medidas">
+        <p class="title2">Confira as <br> medidas que o <br> Lanche Prime adotou!</p>
+        <p class="titles">Juntos, vamos sair dessa ainda mais fortes, preparados e unidos.</p>
+        <a href="medidas.html"><input type="button" value="Saiba Mais" id="botao"></a>
+    </div>
+
+    <div class="box2">
+        <img id="pix" src="img/pix.png" alt="pix">
+        <p class="title2">Agora você pode pagar seu lanche com PIX</p>
+        <p class="titles">Veja como é fácil, Clique no botão abaixo e confira agora mesmo!!</p>
+        <br>
+        <a href="pix.html"><input type="button" value="Saiba Mais" class="botao1" id="botao"></a>
+    </div>
+    
+    <br clear="all">
+
+    <footer>
+        <p><a href="privacidade.html">Privacidade</a></p>
+        <p><a href="termos.html">Termos e Condições</a></p>
+        <p><a href="trabalhe.html">Trabalhe conosco</a></p>
+        <p><a href="contatos.html">Contato</a></p>
+        <p class="copy">Lanche Prime &copy 2022</p>
+    </footer>
+  
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanche Prime </title>
+    <link rel="stylesheet" href="css/hotsite.css">
+    <link rel="stylesheet" href="css/contatos.css">
+    <script src="script/hotsite.js"></script>
+    <link rel="shortcut icon" type="imagex/png" href="./img/ico.png"><!--Tag para colocar imagem na guia da internet-->
+    
+    
+</head>
+<body>
+    <header>
+
+        <div id="boxlogo">
+            <a href="index.html"><img src="img/logo.png" alt="logotipo" id="logotipo"></a>
+        </div>
+       
+        <div id="redesociais">
+            <a href="http://www.instagram.com.br"><img class="atalhosrs" id="in"src="img/instP.png" onmouseover="trocar()" onmouseout="voltar()"></a>
+            <a href="http://www.facebook.com.br"><img class="atalhosrs" id="fc"src="img/ffb.png" onmouseover="trocarf()" onmouseout="voltarf()"></a>
+            <a href="http://web.whatsapp.com"><img class="atalhosrs" id="wp" src="img/whatsappP.png" onmouseover="trocarw()" onmouseout="voltarw()"></a>
+        </div>
+        
+        <form id="formPesquisa" action="">
+            <input id="pesquisa" type="search" maxlength="15" placeholder="Pesquisar seu Lanche Prime">
+            <input id="submit" type="button" value="Pesquisar">
+        </form>
+     
+    </header>
+
+    <nav id="menu">
+        <div id="cx" class="meuMenu">
+         
+            <ul class="menu">
+                <li id="mm"><a href="classicos.html">Clássicos</a></li>
+                <li id="mm"><a href="acompanhamentos.html">Acompanhamentos</a></li>
+                <li id="mm"><a href="bebidas.html">Bebidas</a></li>
+            </ul>
+
+       </div>
+    </nav>
+    <br>
+
+    <!--- CONTEUDO NESSA PARTE AQUI TA ZÉ ;) KKKKKKKKKKKKK-->
+    <section style="width:100%; height:auto; background-color:#ffba0b; overflow:auto;">
+        
+        <h1 id="textcontato"> contatos </h1>
+        
+        <form id="formcontato" method="POST" action="enviar2.php">
+        
+ 
+        
+            
+            
+            <div id="Nome Completo"> <input type="text" placeholder="Nome Completo*" style="width:35%; float: left;"required > </div>
+            
+            <div id="Email"> <input type="Email" placeholder="Email*" style="width:35%; float: left;"required > </div>
+            <div id="Celular"> <input type="tel" placeholder="Celular*" style="width:35%; float: left;" required > </div>
+            <div id="Telefone"> <input type="tel" placeholder="Telefone*" style="width:35%; float: left;"required > </div>
+            <div id="Endereço"> <input type="tel" placeholder="Endereço*" style="width:35%; float: left;"required > </div>
+            <div id="Cidade"> <input type="Cidade" placeholder="Cidade*" style="width:35%; float: left;"required > </div>
+            <div id="Bairro"> <input type="Bairro" placeholder="Bairro*" style="width:35%; float: left;"required > </div>
+            <div id="Estado"> <input type="Estado" placeholder="Estado*" style="width:35%; float: left;"required > </div>
+
+            <textarea placeholder="comentario" style="height: 245px; float: left;"> </textarea>
+            
+            <input type="submit" value="Enviar" style="width:80px; height:35px; float:left; margin:10px;">
+            
+    
+            
+        
+        
+        
+        
+        
+        
+        </form>
+        
+       
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1087.749923707126!2d-46.42530281883201!3d-23.505870991582775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce63f19b93b521%3A0xee099c75998288ee!2sRua%20Benjamin%20Capusso%20-%20Vila%20Curu%C3%A7%C3%A1%20Velha%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008031-760!5e0!3m2!1spt-BR!2sbr!4v1623259781395!5m2!1spt-BR!2sbr" style="border:0; width:100%; height:500px; margin: 50px 0px 50px 0px;" allowfullscreen="" loading="lazy"></iframe>
+            
+            </section>
+            
+            <footer>
+                <p><a href="privacidade.html">Privacidade</a></p>
+                <p><a href="termos.html">Termos e Condições</a></p>
+                <p><a href="trabalhe.html">Trabalhe conosco</a></p>
+                <p><a href="contatos.html">Contato</a></p>
+                <p class="copy">Lanche Prime &copy 2022</p>
+            </footer>
+         
+  
+</body>
+</html>

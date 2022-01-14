@@ -1,0 +1,51 @@
+#formestagiario{
+    width:83%; 
+    height:auto; 
+    margin:0px auto;
+    background-color:#ffbc0d; 
+    padding: 25px;
+    box-sizing:border-box;
+    overflow:auto;
+    
+  
+  
+   
+}
+
+#formestagiario h2{
+    font-family:consolas; 
+    text-align:center;
+    color:#8F8C8F;
+}
+
+#formestagiario input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px 16px;
+    box-sizing: border-box;
+    margin: 10px;
+    margin-left:;
+    margin-right: 20px;
+    float: left;
+    font-size: 12pt;
+    }
+
+#formestagiario .genero {
+    font-size: 14pt;
+    color:#fff;
+}
+   
+#formestagiario #genero{
+    width: 20px;
+    height: 20px;
+    float: none;
+    margin-left: 0px;
+    margin: 5px;
+   
+   
+    }
+
+
+

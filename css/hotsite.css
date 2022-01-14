@@ -1,0 +1,744 @@
+/*configuração universal*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    width:100%;
+    height:auto;
+    background-color: #ffbc0d;
+    padding: 40px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+header img{
+    float: left;
+   
+}
+
+/*--------------------------------------------FOTO MENU PARA TELAS PEQUENAS--------------------------------------------------------------------*/
+
+
+#fotoMenu{
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    display: none;
+    z-index: 2;
+}
+
+#close{
+    font-size: 25pt;
+    font-family: sans-serif;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    display: none;
+    color: beige;
+}
+/*--------------------------------------------------configurações menu-------------------------------------------------------------------------*/
+.menu{
+    list-style: none;
+}
+
+#mm a{
+    text-decoration: none;
+    color: black;
+    float: left;
+    margin: 10px 50px 0px 50px;
+    text-align: center;
+}
+
+#mm a:hover{
+    color: red;
+
+}
+
+#formPesquisa{
+    width: 500px; 
+    height: 80; 
+   margin-top: 20px;
+    overflow: auto;
+}
+
+/*BARRA PESQUISA INPUT*/
+#pesquisa{
+
+    float: left !important;
+    
+    width: 350px !important;
+    height: 40px !important;
+}
+
+/*BOTÃO PESQUISAR*/
+#submit{
+    float: left !important;
+    width: 100px !important; 
+    height:40px !important;
+    margin-left: 20px !important;
+}
+
+#submit:hover{
+    background-color:#ccc;
+    cursor: pointer;
+}
+
+/*icones wpp/fb/inst. */
+.atalhosrs{
+    float: right;
+    margin: 25px 1px 0px 5px;
+}
+
+
+ 
+/*animação do menu*/
+#menu p a:hover{
+    color: red;
+}
+
+/*DIV DO MENU*/
+#cx{
+    width: 70%;
+    height: 25px;
+    margin: 10px 0px 0px 200px;
+    /*background-color: seagreen;*/
+    text-align: center;
+}
+
+/*--------------------------------------------------CONFIGURAÇÕES CARROSSEL------------------------------------------------------*/
+
+/*configurações do espaço que sera usado para o carrossel de fotos */
+.galery{
+    width: 100%;
+    height: 373px;
+   /*background-color:black;*/
+    overflow: hidden;
+}
+/*configuração para a animação das fotos*/
+.galery .foto{
+    width: 500%;
+    animation-name: animacao; /*<-- isso é uma keyframe, usada para configurar depois a animação*/
+    animation-duration: 20s; /*tempo total em que o carrossel deve exibir todas as fotos até recomeçar*/
+    animation-iteration-count: infinite; /*loop da animação, infinito para que ele sempre fique mostrando as fotos*/
+}
+
+
+/*width: 19.9%*/
+.galery .foto img{
+    width: 20%;
+}
+
+@keyframes animacao { /*dividimos os vinte segundos em porcentagens para que todas as fotos tenham a mesma quantidade de segundos de exibição*/
+    0% {margin-left: 0; } 
+    20%{margin-left: 0; }
+    25%{margin-left: -100.4% }
+    45%{margin-left: -100.4% }
+    50%{margin-left: -200.4% }
+    70%{margin-left: -200.4% }
+    75%{margin-left: -301% }
+    95%{margin-left: -301% }
+    100%{margin-left: -301% }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/*CAIXAS DAS DIV*/
+.box{
+    width: 350px;
+    height: 380px;
+    border: solid #ccc 1px;
+    float: left;
+    margin:30px 30px 30px 59px;
+    border-radius: 15px;
+}
+
+/*IMAGEM DAS DIV */
+#pic{
+    width: 350px;
+    height: 200px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+/*TITULO DAS DIV*/
+.titulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20pt;
+    margin:10px 0px 0px 110px;
+}
+
+/*TITULO DAS DIV LANÇAMENTOS*/
+.titulo1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20pt;
+    margin: 10px 0px 0px 85px;
+}
+
+/*SUBTITULO DAS DIV*/
+.sub{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 11pt;
+    margin: 9px 10px 0px 10px;
+    text-align: justify;
+}
+
+/*BOTÕES DA DIV*/
+#botao{
+    width: 130px;
+    height: 40px;
+    margin: 20px 110px 0px 110px;
+    background-color: #ffbc0d;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: #ffbc0d;
+    font-size: 11pt;
+    cursor: pointer;
+}
+
+#botao:hover{
+    background-color:rgb(207, 189, 28);
+}
+
+
+/*CONFIGURAÇÕES PAGINA DE PRIVACIDADE/ TERMOS*/
+.priv{
+    width: auto;
+    height: auto;
+    margin: 1% 10% 10% 10%;
+}
+
+#title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15pt;
+    text-align: justify;
+}
+
+hr{
+    background: darkgray;
+}
+
+p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    text-align: justify;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.box2{
+    width: 350px;
+    height: 480px;
+    border: solid #ccc 1px;
+    float: left;
+    margin:30px 40px 30px 195px;
+    border-radius: 15px;    
+}
+
+/*IMAGEM DO BOX MEDIDAS*/
+#medidas{
+    width: 350px;
+    height: 150px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+/*-----------------------------------------------------------BOX PIX---------------------------------------------------------------------------*/
+#pix{
+    width: 350px;
+    height: 160px;
+    border-radius: 15px 15px 0px 0px;
+}
+#ic{
+    width: 240px;
+    height: 120px;
+}
+/*BOTÃO DE PIX*/
+.botao1{
+    width: 130px;
+    height: 40px;
+    margin: 25px 110px 3px 0px;
+    background-color: #ffbc0d;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: #ffbc0d;
+    font-size: 11pt;
+    cursor: pointer;
+}
+
+/*TITULO BOX DE MEDIDAS DO LANCHE PRIME*/
+.title2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    margin:10px 80px 6px 55px;
+    width: 70%;
+}
+
+/*LEGENDAS DO BOX DE MEDIDAS DO LANCHE PRIME*/
+.titles{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin:10px 80px 6px 80px;
+    width: 50%;
+}
+
+/*GIF PAGINA MEDIDAS*/
+#gif{
+    margin:25px 0px 15px 370px;
+}
+
+#img{
+   width: 550px;
+   height: 650px;
+   margin:15px 0px 0px 360px
+}
+
+#s{
+    margin:0px 165px 20px 165px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 15pt;
+}
+
+#t{
+    margin:20px 165px 20px 165px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 30pt;
+}
+
+
+
+
+/*-------------------------------------------PAGINA DOS LANCHES "CLASSICOS"-----------------------------------------------------------------*/
+
+/* SECTION */
+#s1{
+    width: 100%;
+    height: 463px;
+    /*border: 1px solid #000;*/
+    margin-top: 15px;
+}
+#s2{
+    width: 100%;
+    height: 463px;
+    /*border: 1px solid #000;*/
+    margin-top: 9px;
+}
+ 
+/* BOX */
+.boox1{
+    width: 400px;
+    height: 290px;
+    border: 1px solid rgb(158, 154, 154);
+    float: left;
+    margin: 20px 15px 10px 28px;
+    overflow: hidden;
+    border-radius: 20px;
+    
+}
+
+.boox1:hover{
+    height: 440px;
+    border: 1px solid blue;
+    transition: all 0.7s;
+}
+  
+/* TITULO DOS LANCHES*/
+.tit{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+li{
+    margin-left: 130px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*FOTOS DOS LANCHES */
+#photo{
+    height: 260px;
+}
+
+/*--------------------------------------PAGINA DE COMBOS-----------------------------------------------------------*/
+#ft{
+    height: 258px;
+    width:402px;
+
+}
+
+/*-----------------------------PAGINA DE LANÇAMENTOS----------------------------------------------------*/
+
+/*section*/
+#lancamento{
+    /*background-color: rgba(216, 188, 152, 0.712);*/
+    border-radius: 20px;
+    /*border: 1px solid #000;*/
+    margin-top: 40px;
+    
+}
+
+#ac{
+    float: right;
+}
+
+/*imagens*/
+.imgl{
+    margin: 7px 20px 0px 30px;
+    width: 30%;
+    height: 380px;
+    border-radius: 30px 30px 30px 30px;
+    box-sizing: border-box;
+}
+
+/*div textos dos lanches*/
+#bx{
+    float: right;
+    /*border: 1px solid #000;*/
+    width: 60%;
+    height: 350px;
+    margin: 25px 30px 0px 0px;
+}
+
+/*TITULO E PARAGRAFO */
+.lan{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    text-shadow: black 3px 3px 8px;
+    font-size: 25pt;
+}
+
+.tits{
+    font-size: 25pt;
+    /*text-shadow: 3px 3px 8px rgb(65, 62, 62);*/
+    text-align: center;
+}
+
+#lis{
+    font-size: 20pt;
+}
+
+
+/*----------------------------------------------------PAGINA SOBREMESAS------------------------------------------------------------------*/
+/*imagens das sobremesas*/
+#sobre{
+    height: 258px;
+    width:402px;
+}
+
+#petit{
+   margin-left: 97px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------PAGINA PIX------------------------------------------*/
+
+.pix{
+    width: 300px;
+    height: 300px;
+    float:left;
+    /*border: 1px solid #000;*/
+    margin: 130px 70px 0px 70px;
+}
+
+#banco{
+    width: 100%;
+    height: 200px;
+    /*border: 1px solid #000;*/
+    margin: 40px 0px 0px 0px;
+    text-align: center;
+}
+
+#txxt{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+#ic{
+    margin-left: 40px;
+}
+
+#botaozao{
+    width: 180px;
+    height: 60px;
+    margin: 20px 110px 0px 110px;
+    background-color: #ffbc0d;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: #ffbc0d;
+    font-size: 11pt;
+    cursor: pointer;
+}
+#botaozao:hover{
+    background-color:rgb(207, 189, 28);
+
+}
+
+
+/*--------------------------------------------------------Bebidas------------------------------------------*/
+
+#bebidas{
+    height: 250px;
+    width:350px;
+}
+.beb{
+    width: 400px;
+    height: 290px;
+    border: 1px solid rgb(158, 154, 154);
+    float: left;
+    margin: 20px 15px 10px 28px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.beb:hover{
+    height: 370px;
+    border: 1px solid blue;
+    transition: all 0.7s;
+}
+
+/*----------------------------------------------------ACOMPANHAMENTOS-----------------------------------------*/
+#acom{
+    font-size: 14pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    margin: 9px;
+    text-align: center;
+}
+
+#aa{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 4px;
+}
+
+#topcos{
+    margin-left: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#topcos1{
+    margin-left: 150px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#acomp{
+    width: 400px;
+    height: 260px;
+}
+
+.boox2{
+    width: 400px;
+    height: 290px;
+    border: 1px solid rgb(158, 154, 154);
+    float: left;
+    margin: 20px 15px 10px 28px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.boox2:hover{
+    height: 420px;
+    border: 1px solid blue;
+    transition: all 0.7s;
+}
+
+/*------------------------------------------Formulário Giovanni---------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+
+#textcontato{
+    text-align:center; 
+    font-family: 'Hind', sans-serif;
+    margin-top:60px 100px 0px 0px; 
+    font-size:40pt; 
+    color:#050400;
+    text-shadow:2px 2px 5px #7c5f00;
+}
+
+form{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+
+
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px 16px;
+    box-sizing: border-box;
+}
+
+ textarea{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px 16px;
+    box-sizing: border-box;
+    margin: 20px ;
+    margin-left: -10px;
+
+}
+
+/*---------------------------------------------------RODAPÉ----------------------------------------------------*/
+footer{
+    width:100%;
+    height:80px;
+    background-color: #ffbc0d;
+    
+}
+footer p a{
+    float: left;
+    margin: 30px;
+    font-size: 11pt;
+    font-family: helvetica;
+    text-decoration: none;
+    color: slategrey;
+}
+
+/* FOOTER COPY*/
+.copy{
+    float: right;
+    margin: 30px 30px 0px 0px;
+    color: rgba(158, 154, 154, 0.884);
+}
+
+/*---------------------------------------------TELAS MENORES--------------------------------------------- */
+
+@media(max-width: 420px){
+body{
+    width: 100%;
+    height: auto;
+   
+} 
+
+header{
+    width: 100%;
+    height: 200px;
+}
+
+#logotipo{
+    max-width:45%;
+    height: auto;
+   
+}
+
+#boxlogo{
+
+  
+    overflow: auto;
+}
+
+
+#pesquisa{
+    width: 10px;
+    height: 7px;
+    float: left;
+    position: relative;
+    top:2px;
+    right: 13px;
+    display: none;
+}
+
+#submit{
+    display: none;
+}
+
+.atalhosrs{
+    width: 30px;
+    height: 30px;
+   float: none;
+}
+
+
+#redesociais{
+    position: relative;
+    top: 70px;
+    width: 50%;
+ 
+    overflow: auto;
+}
+/*MENU*/
+#cx{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 200px;
+    left: -200px !important;
+    background-color: rgb(236, 35, 35);
+    display:none;
+}
+
+.menu{
+    width: 200px;
+    height: auto;
+    background-color: rgb(138, 47, 47);
+}
+
+#mm a{
+   text-align: center;
+}
+
+.box, .box2{
+    width: 80%;
+   height: 600px;
+   margin: 10px;
+    text-align: center;
+}
+
+.box p, .box2 p {
+
+    text-align: center;
+
+}
+
+#pix, #pic, #medidas{
+    width: 100%;
+    height: 300px;
+}
+
+#fotoMenu{
+    width: 30px;
+    position: absolute;
+    top: 120px;
+    right: 10px;
+    display:block ;
+    z-index: 2;
+
+}
+
+#close{
+    font-size: 25pt;
+    position: absolute;
+    top: 120px;
+    right: 10px;
+    z-index: 2;
+}
+
+.galery{
+    display: none;
+}
+
+
+
+footer{
+    width:100%;
+    height:auto;
+    background-color: #ffbc0d;
+    overflow: auto;
+    
+}
+
+}

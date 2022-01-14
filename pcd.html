@@ -1,0 +1,148 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanche Prime </title>
+    <link rel="stylesheet" href="css/hotsite.css">
+    <link rel="stylesheet" href="css/pcd.css">
+    <script src="script/hotsite.js"></script>
+    <link rel="shortcut icon" type="imagex/png" href="./img/ico.png"><!--Tag para colocar imagem na guia da internet-->
+     <script>
+
+     </script>
+    
+</head>
+<body>
+    <header>
+        <div id="boxlogo">
+
+            <a href="index.html"><img src="img/logo.png" alt="logotipo" id="logotipo"></a>
+
+        </div>
+   
+
+    <div id="redesociais">
+
+        <a href="http://www.instagram.com.br"><img class="atalhosrs" id="in"src="img/instP.png" onmouseover="trocar()" onmouseout="voltar()"></a>
+        <a href="http://www.facebook.com.br"><img class="atalhosrs" id="fc"src="img/ffb.png" onmouseover="trocarf()" onmouseout="voltarf()"></a>
+        <a href="http://web.whatsapp.com"><img class="atalhosrs" id="wp" src="img/whatsappP.png" onmouseover="trocarw()" onmouseout="voltarw()"></a>
+
+    </div>
+    
+    <form id="formPesquisa" action="">
+        <input id="pesquisa" type="search" maxlength="15" placeholder="Pesquisar seu Lanche Prime">
+        <input id="submit" type="button" value="Pesquisar">
+    </form>
+ 
+
+</header>
+
+
+    <nav id="menu">
+        <div id="cx" class="meuMenu">
+         
+            <ul class="menu">
+                <li id="mm"><a href="classicos.html">Clássicos</a></li>
+                <li id="mm"><a href="acompanhamentos.html">Acompanhamentos</a></li>
+                <li id="mm"><a href="bebidas.html">Bebidas</a></li>
+            </ul>
+
+       </div>
+    </nav>
+
+    <br>
+
+    <section style="width:100%; height:auto; background-color:#fff; overflow:auto;">
+
+       
+
+        <form method="post" action="envio.php">
+
+			<h2> Formulário para Pessoas Com Deficiência </h2>
+		
+            <label for="Sexo" class="deficiencia">Genero:  <br>
+                Masculino<input  type="radio" id="deficiencia" value="Masculino">
+                Feminino  <input type="radio" id="deficiencia" value="Feminino"> 
+                Outros <input type="radio" id="deficiencia" value="Outros"> 
+            </label>
+
+
+
+			
+			<label for="Nome completo"><input type="text" placeholder="Nome completo" name="nome" style="width: 95.5%;"> </label><br>
+
+			<label for="RG"><input type="text" maxlength="10" placeholder="RG" name="rg" style="width: 30.1%;"></label> 
+
+            <label for="CPF"><input type="text" maxlength="11" placeholder="CPF" name="cpf" style="width: 30%;"> </label> 
+
+            <label for="Nascimento"><input type="date" placeholder="Nascimento" name="nascimento" style="width: 30%;"></label> 
+
+           
+            
+            <label for="Rua"><input type="text" placeholder="Rua" name="rua" style="width: 30%;"></label> 
+
+            <label for="Número"><input type="text" placeholder="Número" name="numero" style="width:10%"></label> 
+
+            <label for="Complemento"><input type="text" placeholder="Complemento" name="complemento" style="width:15%;"></label> 
+
+            <label for="Bairro"><input type="text" placeholder="Bairro" name ="bairro"style="width:10%;"></label> <br>
+
+            <label for="Referência"><input type="text" placeholder="Referência" name="referencia"style="width: 20%;"></label> <br>
+
+            <label for="CEP"><input type="number" placeholder="CEP" name="cep" style="width:15%;"></label> <br>
+            
+            
+            
+            <label for="Cidade"><input type="text" placeholder="Cidade" name="cidade" style="width:25%;"></label> <br>
+
+            <label for="UF"><input type="text" placeholder="UF" name="uf" style="width:5%;"></label> <br>
+            
+            
+            
+            
+            
+           
+            <label for="email"><input type="email" placeholder="email" name = "email"style="width: 28%;"></label> <br>
+			<label for="Tel / Cel "><input type="tel" placeholder="Tel / Cel" name="tel" style="width: 12%";></label> 
+
+			<h4>Selecione seu tipo de Deficiência:</h4>
+            <label for="deficiencia" class="deficiencia">  <br>
+                Deficiência Física<input  type="radio" name="def"id="deficiencia" >
+                Deficiência Auditiva  <input type="radio" name="def" id="deficiencia" > 
+                Deficiência Visual <input type="radio" name="def" id="deficiencia" > 
+                 Deficiência Mental  <input type="radio" name="def" id="deficiencia" > 
+                Deficiência Múltipla  <input type="radio"  name="def"id="deficiencia" > 
+            </label>
+
+            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Descreva aqui o seu tipo de deficiência"></textarea>
+			
+			<br>
+            <input type="submit" value="enviar"  style="width: 96.3%; height:35px;float:left; margin:10px;">
+            
+            
+		
+		
+		
+		</form>	
+
+
+
+    </section>
+        
+
+
+
+    <br clear="all">
+
+    <footer>
+        <p><a href="privacidade.html">Privacidade</a></p>
+        <p><a href="termos.html">Termos e Condições</a></p>
+        <p><a href="trabalhe.html">Trabalhe conosco</a></p>
+        <p><a href="contatos.html">Contato</a></p>
+        <p class="copy">Lanche Prime &copy 2022</p>
+    </footer>
+  
+</body>
+</html>
